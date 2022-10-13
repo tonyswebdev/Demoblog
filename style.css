@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    color: rgba(0,0,0, 0.87);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 500;
+}
+.topbar{
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    padding: 15px ;
+    z-index: 3;
+    height: 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+}
+.topbar nav{
+    float: left;
+}
+.topbar nav a{
+   color: #9f9f9f;
+   text-decoration: none;
+   font-weight: 500;
+   padding: 0 53px;
+   
+}
+.topbar nav a:hover, .topbar nav a.active{
+    color: black;
+}
+.social{
+    float: right;
+}
+.social a{
+    padding: 0 12px;
+    opacity: .5;
+}
+.social a:hover{
+    opacity: 1;
+}
+.main{
+    float: left;
+    height: 200px;
+    background: white;
+    width: calc (100% - 375px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+    position: relative;
+    z-index: 2;
+}
+.sidebar{
+    position: relative;
+    float: right;
+    /*background: #FBFBFB;
+    background: #ccc;*/
+    width: 375px;
+    padding : 40px;
+    z-index: 1;
+   
+}
+.sidebar-title{
+    font-size: 30px;
+    color: #000;
+    margin: 15px 0;
+}
+.sidebar-title:first-child{
+    margin-top: 0;
+}
+.sidebar a{
+    color: #9f9f9f;
+    text-decoration: none;
+}
+.sidebar ul{
+    margin: 0;
+    padding : 0;
+    list-style: none;
+    font-size: 17px;
+    line-height: 2.3;
+}
+.sidebar li{
+    padding: 0 0;
+}
+.sidebar li:first-child{
+    padding-top: 0;
+}
+.sidebar li:last-child{
+    padding-bottom: 0;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.sidebar hr{
+    border-color: #c4c4c4;
+    margin: 50px 0;
+}
+.article{
+    overflow: hidden;
+    margin: 20px 100px;
+    min-height: 203px;
+    max-width: 940px;
+}
+.article-img{
+    float: left;
+    width: 308px;
+    margin-right: 10px;
+}
+.article-img img{
+    width: 100%;
+    height: auto;
+}
+.article-date{
+    font-weight: 300px;
+    color: rgba(0, 0, 0, .6)
+}
+.article-title{
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-family: "Cardo" , serif;
+    margin: 0 0 15px 0;
+   }
+   .article-title a{
+    color: black;
+   }
+   .article-title a:hover{
+    color: blue;
+   }
+ 
+
+.footer{
+    position: absolute;
+    bottom: -750px;
+    right: 50px;
+}
